@@ -130,3 +130,5 @@ def process_image(image):
 	line_image = hough_lines(roi_image, 4, theta, 30, 100, 180)
 	result = weighted_img(line_image, image, α=0.8, β=1., λ=0.)
 	return result
+
+
